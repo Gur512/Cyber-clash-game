@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">  
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="Dave Sommerville">
+    <meta name="description" content="Dave Sommerville">
+    <meta name="theme-color" content="#ffffff">
+    <script src="/socket.io/socket.io.js"></script>
+    <title></title>
+    <link rel="icon" href="./src/img/favicon.png" type="image/x-icon">
+    
+    <!-- External stylesheets -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Lexend:wght@100..900&family=Merriweather+Sans:ital,wght@0,300..800;1,300..800&family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Outfit:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Space+Grotesk:wght@300..700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">    
+    <script src="app.js" defer></script>
+  </head>
+<body>
+  <header>
+    <h1 class="typewriter glow-text">
+      <span>C</span>
+      <span>Y</span>
+      <span>B</span>
+      <span>E</span>
+      <span>R</span>
+      <span> </span>
+      <span>C</span>
+      <span>L</span>
+      <span>A</span>
+      <span>S</span>
+      <span>H</span>
+    </h1>
+  </header>
+  <main class="f-col container">
+    <div class="StopMsg"></div>
+    <section class="question-display f-col">
+      <div id="pauseMessage" class="pause-banner">⏸ Quiz Paused</div>
+      <p class ="warning-msg">Please select an answer!</p>
+      <div class="countdown">
+        <div class="glow-text">Time Left:</div>
+        <div id="countdown" class="glow-text">60s</div>
+      </div>
+      <div class="question-wrapper flex">
+        <p class="question-text">Waiting for the questions...</p>
+      </div>
+      <div class="multiple-choice-wrapper">
+        <div class="multiple-choice">
+          <div class="option-one">
+            <p class="opt-one-txt">Loading..</p>
+          </div>
+          <div class="option-two">
+            <p class="opt-two-txt">Loading..</p>
+          </div>
+          <div class="option-three">
+            <p class="opt-three-txt">Loading..</p>
+          </div>
+          <div class="option-four">
+            <p class="opt-four-txt">Loading..</p>
+          </div>
+        </div>
+      </div>
+      <div class="true-false-wrapper" style="display: none;">
+        <div class="true-false">
+          <div class="option-one">
+            <p class="opt-one-txt">True</p>
+          </div>
+          <div class="option-two">
+            <p class="opt-two-txt">False</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <button class="submit btn-3d">Submit</button>
+
+  </main>
+  <script src="/socket.io/socket.io.js"></script>
+</body>
+</html>

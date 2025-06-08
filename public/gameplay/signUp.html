@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">  
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="Dave Sommerville">
+    <meta name="description" content="Dave Sommerville">
+    <meta name="theme-color" content="#ffffff">
+    <script src="/socket.io/socket.io.js"></script>
+    <title>Cyber-Clash</title>
+    <link rel="icon" href="./src/img/favicon.png" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Lexend:wght@100..900&family=Merriweather+Sans:ital,wght@0,300..800;1,300..800&family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Outfit:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Space+Grotesk:wght@300..700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">    
+    <script defer src="./signUp.js"></script>
+</head>
+<body class="no-select">
+  <header>
+    <h1 class="typewriter glow-text">
+      <span>C</span>
+      <span>Y</span>
+      <span>B</span>
+      <span>E</span>
+      <span>R</span>
+      <span> </span>
+      <span>C</span>
+      <span>L</span>
+      <span>A</span>
+      <span>S</span>
+      <span>H</span>
+    </h1>
+  </header>
+  <main class="f-col">
+    <div id="waitingMessage" class="f-col center">
+        <p>Waiting for the admin to start...</p>
+    </div>
+    <section id="playerLobby" class="player-lobby f-col center"  style="display:none;">
+        <div class="picture-chooser tech-inset glow-border flex center">
+          <div class="left-arrow pointer hover">
+            <img src="../img/arrow-left.png">
+          </div>
+          <div class="circle">
+            <img class="avatar" src="../img/user-solid.svg">
+          </div>
+          <div class="right-arrow pointer hover">
+            <img src="../img/arrow-right.png">
+          </div>
+        </div>
+      <input id="playerName" placeholder="Enter your name" class="name-entry">
+      <button class="select-name btn-3d">Enter</button>
+    </section>
+  </main>
+</body>
+</html>

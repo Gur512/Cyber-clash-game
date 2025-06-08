@@ -1,0 +1,15 @@
+# Node modules
+node_modules/
+
+# SQLite DB file
+*.db
+
+# Environment config (if using)
+.env
+
+# VS Code settings (optional but common)
+.vscode/
+
+# OS clutter
+.DS_Store
+Thumbs.db
